@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.back {
+    position: absolute;
+    left: -4%;
+    top: -4%;
+    bottom: -4%;
+    right: -4%;
+    background: url(img/css-dof-back-1024x683.jpg) no-repeat center / cover;
+    filter: blur(4px);
+    transition: 1s;
+}
+
+.back:hover {
+    filter: blur(0)
+}
+
+.front {
+    position: absolute;
+    bottom: -4%;
+    right: 3vw;
+    width: 50vw;
+    padding-bottom: 30%;
+    filter: blur(4px);
+    background: url(img/css-dof-front.jpg) no-repeat center / 100% 100%;
+    transition: 1s;
+}
+
+.front:hover {
+    filter: blur(0)
+}
